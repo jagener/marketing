@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "naver-searchad": {
+      "command": "uv",
+      "args": ["run", "--script", "naver_searchad_mcp/server.py"]
+    }
+  }
+}
