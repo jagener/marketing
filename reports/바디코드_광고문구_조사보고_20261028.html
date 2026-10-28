@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>바디코드 광고문구 조사보고</title>
+<style>
+  :root{
+    --ink:#1d2433; --sub:#5b6475; --line:#e3e6ec; --bg:#f6f7f9; --card:#fff;
+    --navy:#1f3a5f; --accent:#c8102e; --ok:#1e7b4f; --okbg:#e7f4ec;
+    --warn:#9a6200; --warnbg:#fff4dc; --gray:#6b7280; --graybg:#eef0f3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+    line-height:1.65;font-size:15px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:40px 16px 64px}
+  header{border-bottom:3px solid var(--navy);padding-bottom:18px;margin-bottom:28px}
+  .eyebrow{font-size:13px;color:var(--sub);letter-spacing:.02em}
+  h1{font-size:26px;margin:6px 0 10px;line-height:1.35}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--sub)}
+  h2{font-size:18px;margin:36px 0 12px;padding-left:10px;border-left:4px solid var(--navy)}
+  h3{font-size:15px;margin:20px 0 8px}
+  p{margin:8px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .summary{border-left:4px solid var(--accent)}
+  .summary ol{margin:6px 0 0;padding-left:20px}
+  .summary li{margin:6px 0}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .stat b{display:block;font-size:22px;color:var(--navy)}
+  .stat span{font-size:12.5px;color:var(--sub)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 2px}
+  .chip{display:inline-block;border:2px solid var(--accent);color:var(--accent);background:#fff;
+    font-weight:700;border-radius:999px;padding:4px 14px;font-size:15px}
+  .tbl{width:100%;border-collapse:collapse;background:var(--card);font-size:14px}
+  .tbl th,.tbl td{border:1px solid var(--line);padding:9px 10px;vertical-align:top;text-align:left}
+  .tbl th{background:var(--graybg);font-weight:600;white-space:nowrap}
+  .tbl td.kw{font-weight:700;color:var(--accent);white-space:nowrap}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .q{color:var(--sub)}
+  mark{background:#ffe3e6;color:inherit;padding:0 2px;border-radius:2px}
+  .tag{display:inline-block;font-size:12px;font-weight:600;border-radius:4px;padding:1px 7px;white-space:nowrap}
+  .t-ok{background:var(--okbg);color:var(--ok)}
+  .t-warn{background:var(--warnbg);color:var(--warn)}
+  .t-gray{background:var(--graybg);color:var(--gray)}
+  .note{background:var(--warnbg);border:1px solid #f0d9a6;border-radius:10px;padding:14px 18px;font-size:14px}
+  .note ul{margin:6px 0 0;padding-left:20px}
+  a{color:var(--navy)}
+  .src{font-size:12.5px;word-break:break-all}
+  footer{margin-top:40px;font-size:12.5px;color:var(--sub);border-top:1px solid var(--line);padding-top:14px}
+  @media (max-width:640px){
+    h1{font-size:21px}
+    .stats{grid-template-columns:repeat(2,1fr)}
+  }
+  @media print{
+    body{background:#fff;font-size:12.5px}
+    .wrap{padding:0}
+    .card,.stat,.note{break-inside:avoid}
+    h2{break-after:avoid}
+    tr{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">SC301의원 · 네이버 검색광고 소재 검토</div>
+  <h1>바디코드 광고 소재명 2차 조사 보고<br><span style="font-weight:500;font-size:.8em">네이버 브랜드검색·파워링크 문구 조사</span></h1>
+  <div class="meta">
+    <span>조사일: 2026.10.28</span>
+    <span>대상 상품: 바디코드 (<a href="https://cell.sc301.co.kr/bodycode" target="_blank" rel="noopener">cell.sc301.co.kr/bodycode</a>)</span>
+    <span>목적: '기능의학' 대체 표현 발굴</span>
+  </div>
+</header>
+
+<section>
+  <div class="card summary">
+    <strong>요약</strong>
+    <ol>
+      <li>1차 보고 후보에 마음에 드시는 표현이 없다고 하셔서, 이번에는 <b>네이버 브랜드검색 문구</b>를 중심으로 바디코드(혈액·모발·소변 검사 후 부족한 영양소 투여)와 비슷한 서비스의 광고 문구를 조사했습니다.</li>
+      <li>브랜드검색에서 쓸 만한 키워드 6개를 추렸습니다.
+        <div class="chips" style="margin-top:8px">
+          <span class="chip">맞춤 영양제</span><span class="chip">맞춤케어</span><span class="chip">영양 솔루션</span>
+          <span class="chip">맞춤형 영양 솔루션</span><span class="chip">종합대사기능분석</span><span class="chip">호르몬균형분석</span>
+        </div>
+      </li>
+      <li>다만 6개 중 <b>의료광고 심의를 거친 문구는 '맞춤케어' 1개뿐</b>입니다. 나머지는 의료기관이 아닌 검사·영양제 업체의 문구여서 심의 대상이 아니고, 따라서 '심의 통과 사례'로 볼 수는 없습니다. 의료기관이 쓸 수 있는지는 별도 확인이 필요합니다.</li>
+      <li>기능의학·영양치료를 하는 의원들은 브랜드검색을 하지 않고 <b>파워링크만</b> 집행하고 있었습니다. 파워링크에서는 심의번호가 붙은 비슷한 표현(맞춤 건강관리, 개인맞춤치료, 영양상담 등)을 추가로 확인했습니다.</li>
+    </ol>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>59개</b><span>조사한 관련 검색어</span></div>
+    <div class="stat"><b>374건</b><span>수집한 파워링크 광고</span></div>
+    <div class="stat"><b>57곳</b><span>브랜드명 검색 병원·업체</span></div>
+    <div class="stat"><b>24곳</b><span>브랜드검색 노출 확인</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>1. 조사 방법</h2>
+  <div class="card">
+    <p><b>① 관련 검색어 조사:</b> 기능의학, 영양수액, 맞춤수액, 유기산검사, 모발미네랄검사, 장내미생물검사, 항노화클리닉, 노화속도검사, 저속노화, 웰에이징 등 59개 검색어로 네이버를 검색해, 노출되는 광고 문구와 의료광고 심의번호를 수집했습니다.</p>
+    <p><b>② 브랜드검색 조사:</b> 브랜드검색은 병원·업체 이름으로 검색해야만 노출됩니다. 그래서 ①에서 확인한 광고주와 성형외과·피부과·검진센터·검사업체 등 57곳의 이름을 다시 검색해 브랜드검색 문구를 수집했습니다.</p>
+    <p class="q" style="font-size:13.5px">※ 광고는 시간·지역·입찰에 따라 수시로 바뀌므로, 아래 내용은 2026.10.28 기준입니다. 출처 링크를 누르면 같은 검색어의 현재 네이버 검색 결과가 열립니다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>2. 브랜드검색에서 추출한 키워드</h2>
+  <div class="scroll">
+  <table class="tbl">
+    <thead>
+      <tr><th>키워드</th><th>광고주</th><th>노출 문구 (원문)</th><th>광고주 구분</th><th>심의</th><th>출처</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="kw">맞춤케어</td>
+        <td>톡스앤필의원 (강남)</td>
+        <td>"맞춤 디자인, <mark>맞춤케어</mark>" / "예쁨이 달라지는 톡스앤필, <mark>맞춤 케어</mark>"</td>
+        <td><span class="tag t-ok">의료기관 (피부)</span></td>
+        <td>대한의사협회 의료광고심의필<br>제260831-중-219660호</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%ED%86%A1%EC%8A%A4%EC%95%A4%ED%95%84" target="_blank" rel="noopener">네이버 '톡스앤필'</a></td>
+      </tr>
+      <tr>
+        <td class="kw">맞춤 영양제</td>
+        <td>바이오컴</td>
+        <td>서비스 메뉴: "<mark>맞춤 영양제</mark>" (함께 노출: KOLAS 인증 대사체 연구소, 1:1 전문가 맞춤 상담)</td>
+        <td><span class="tag t-gray">일반업체 (검사기관)</span></td>
+        <td>해당 없음</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EB%B0%94%EC%9D%B4%EC%98%A4%EC%BB%B4" target="_blank" rel="noopener">네이버 '바이오컴'</a></td>
+      </tr>
+      <tr>
+        <td class="kw">종합대사기능분석</td>
+        <td>바이오컴</td>
+        <td>서비스 메뉴: "<mark>종합대사기능분석</mark>"</td>
+        <td><span class="tag t-gray">일반업체 (검사기관)</span></td>
+        <td>해당 없음</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EB%B0%94%EC%9D%B4%EC%98%A4%EC%BB%B4" target="_blank" rel="noopener">네이버 '바이오컴'</a></td>
+      </tr>
+      <tr>
+        <td class="kw">호르몬균형분석</td>
+        <td>바이오컴</td>
+        <td>서비스 메뉴: "<mark>호르몬균형분석</mark>"</td>
+        <td><span class="tag t-gray">일반업체 (검사기관)</span></td>
+        <td>해당 없음</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EB%B0%94%EC%9D%B4%EC%98%A4%EC%BB%B4" target="_blank" rel="noopener">네이버 '바이오컴'</a></td>
+      </tr>
+      <tr>
+        <td class="kw">맞춤형 영양 솔루션</td>
+        <td>GC녹십자웰빙</td>
+        <td>"GC녹십자웰빙은 <mark>맞춤형 영양 솔루션</mark>을 제공하는 기업으로…"</td>
+        <td><span class="tag t-gray">일반업체 (제약·건기식)</span></td>
+        <td>해당 없음</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=GC%EB%85%B9%EC%8B%AD%EC%9E%90%EC%9B%B0%EB%B9%99" target="_blank" rel="noopener">네이버 'GC녹십자웰빙'</a></td>
+      </tr>
+      <tr>
+        <td class="kw">영양 솔루션</td>
+        <td>GC녹십자웰빙<br>알고케어 (파워링크)</td>
+        <td>위 GC녹십자웰빙 문구 / 알고케어 파워링크: "맞춤영양 맞춤 <mark>영양 솔루션</mark>"</td>
+        <td><span class="tag t-gray">일반업체</span></td>
+        <td>해당 없음</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=GC%EB%85%B9%EC%8B%AD%EC%9E%90%EC%9B%B0%EB%B9%99" target="_blank" rel="noopener">네이버 'GC녹십자웰빙'</a><br><a href="https://search.naver.com/search.naver?query=%EB%A7%9E%EC%B6%A4%EC%98%81%EC%96%91" target="_blank" rel="noopener">네이버 '맞춤영양'</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="note" style="margin-top:14px">
+    <b>키워드별로 확인할 점</b>
+    <ul>
+      <li><b>맞춤케어:</b> 심의를 통과한 문구이지만 <b>피부 시술</b> 맥락입니다. 1차 문의 때 심의위원회가 말한 "'케어'는 피부 쪽이 아니면 어려울 수 있다"는 의견과 일치하는 사례라, 바디코드에 쓰면 반려될 수 있습니다.</li>
+      <li><b>바이오컴 3종 (맞춤 영양제·종합대사기능분석·호르몬균형분석):</b> 의료기관이 아닌 검사업체 문구라 의료광고 심의를 받지 않았습니다. 바디코드의 검사 내용과 가장 가까운 표현이지만, 의료기관 광고로 통과될지는 미확인입니다.</li>
+      <li><b>맞춤형 영양 솔루션:</b> GC녹십자웰빙의 브랜드검색 영역에 나오지만, 광고주가 쓴 문구가 아니라 <b>네이버가 AI로 자동 생성한 업체 설명</b>입니다. 표현 참고용으로만 보시면 됩니다.</li>
+      <li><b>'영양제' 표현:</b> 의료기관 광고에서는 건강기능식품 판매로 오해될 수 있어, 심의 시 문제가 될 수 있는지 함께 문의하는 것이 좋겠습니다.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>3. 참고: 파워링크의 심의 통과 표현 (의료기관)</h2>
+  <p>기능의학·영양치료를 하는 의원들은 브랜드검색 대신 파워링크로 광고하고 있었습니다. 아래는 1차 보고서에 없던 표현 중 <b>심의번호가 확인된</b> 문구입니다.</p>
+  <div class="scroll">
+  <table class="tbl">
+    <thead>
+      <tr><th>표현</th><th>의료기관</th><th>광고 문구 (원문)</th><th>심의번호</th><th>노출 검색어 (출처)</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="kw">건강상담 · 영양상담</td>
+        <td>현대미학성형외과의원</td>
+        <td>제목 "<mark>건강상담</mark>,현대미학성형외과의원" / "…피부진료, 리프팅시술, <mark>영양상담</mark>, 생활습관상담"</td>
+        <td>의213434</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EA%B8%B0%EB%8A%A5%EC%9D%98%ED%95%99%EA%B2%80%EC%82%AC" target="_blank" rel="noopener">기능의학검사</a> 외 항노화클리닉·노화검사 등 11개</td>
+      </tr>
+      <tr>
+        <td class="kw">맞춤 건강관리</td>
+        <td>다니엘 웰니스 의원</td>
+        <td>"<mark>맞춤 건강관리</mark>,수액 영양제 치료,만성피로,갱년기,비만클리닉"</td>
+        <td>의177175</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EA%B8%B0%EB%8A%A5%EC%9D%98%ED%95%99%ED%81%B4%EB%A6%AC%EB%8B%89" target="_blank" rel="noopener">기능의학클리닉</a>, 항노화치료</td>
+      </tr>
+      <tr>
+        <td class="kw">개인맞춤치료</td>
+        <td>서울자연의원</td>
+        <td>"광명역KTX, <mark>개인맞춤치료</mark>,가정의학과 전문의 최동현,영양수액/만성피로/통증/비만"</td>
+        <td>의201338</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EC%9C%A0%EA%B8%B0%EC%82%B0%EA%B2%80%EC%82%AC" target="_blank" rel="noopener">유기산검사</a>, 모발미네랄검사, 기능의학병원</td>
+      </tr>
+      <tr>
+        <td class="kw">맞춤 치료</td>
+        <td>원스의원 (압구정·목동)</td>
+        <td>"<mark>맞춤 치료</mark>, 수액치료, 비만클리닉, 갱년기클리닉, 만성피로, 가정의학과진료"</td>
+        <td>의162031</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%ED%95%AD%EB%85%B8%ED%99%94%ED%81%B4%EB%A6%AC%EB%8B%89" target="_blank" rel="noopener">항노화클리닉</a>, 줄기세포치료, 항산화치료</td>
+      </tr>
+      <tr>
+        <td class="kw">영양수액치료</td>
+        <td>대항병원</td>
+        <td>제목 "대항병원, <mark>영양수액치료</mark>" / "…피로회복, 면역증진, 갱년기 장애 개선, 맞춤형 수액"</td>
+        <td>의200555</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EC%98%81%EC%96%91%EC%88%98%EC%95%A1" target="_blank" rel="noopener">영양수액</a>, 수액치료</td>
+      </tr>
+      <tr>
+        <td class="kw">맞춤형 치료및관리 프로그램</td>
+        <td>잠실에프엠의원</td>
+        <td>"…비만 원인 파악, <mark>맞춤형 치료및관리 프로그램</mark>, 수액클리닉"</td>
+        <td>의184037</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EC%9C%A0%EA%B8%B0%EC%82%B0%EA%B2%80%EC%82%AC" target="_blank" rel="noopener">유기산검사</a>, 비타민수액</td>
+      </tr>
+      <tr>
+        <td class="kw">분석에 따른 체계적 진단</td>
+        <td>오블리브 서울 오리진의원 (브랜드검색)</td>
+        <td>"<mark>분석에 따른 체계적 진단</mark>, 개인별 맞춤치료"</td>
+        <td>제260824-중-219175호</td>
+        <td class="src"><a href="https://search.naver.com/search.naver?query=%EC%98%A4%EB%B8%94%EB%A6%AC%EB%B8%8C%EC%9D%98%EC%9B%90" target="_blank" rel="noopener">오블리브의원</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="q" style="font-size:13.5px">※ 현대미학성형외과의원은 우리와 같은 <b>성형외과</b>인데 '건강상담·영양상담' 문구로 기능의학·항노화 관련 검색어 11개에 광고를 노출하고 있어, 가장 가까운 참고 사례입니다.</p>
+</section>
+
+<section>
+  <h2>4. 정리 및 제안</h2>
+  <div class="card">
+    <h3 style="margin-top:0">정리</h3>
+    <ul style="margin:0;padding-left:20px">
+      <li>바디코드와 같은 서비스를 <b>브랜드검색으로 광고하는 의료기관은 확인되지 않았습니다.</b> 브랜드검색은 대형 성형외과·피부과 위주였습니다.</li>
+      <li>바디코드 내용에 가장 잘 맞는 표현은 바이오컴의 <b>'종합대사기능분석', '호르몬균형분석', '맞춤 영양제'</b>이지만, 의료광고 심의를 받은 적이 없는 문구입니다.</li>
+      <li>의료기관 광고에서 심의를 통과한 표현은 대부분 <b>'맞춤 + 진료/치료/관리/상담/진단'</b> 형태였습니다.</li>
+    </ul>
+    <h3>제안</h3>
+    <ol style="margin:0;padding-left:20px">
+      <li>실장님께서 위 키워드 중 마음에 드시는 표현을 골라 주시면, 그 표현으로 <b>의료광고심의위원회에 사전 문의</b>를 진행하겠습니다. 특히 '분석' 계열(종합대사기능분석 등)과 '영양제' 표현이 의료기관 광고에서 허용되는지 확인이 필요합니다.</li>
+      <li>필요하면 심의 통과 사례가 있는 '맞춤 + 진료/관리' 형태를 예비안으로 함께 접수해, 반려 시 일정 지연을 줄이는 방안도 고려할 수 있습니다.</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  조사 방법: 네이버 통합검색 결과(PC)를 직접 조회해 광고 영역의 문구와 심의번호를 수집 (2026.10.28). 수집 원본은 파워링크 374건, 브랜드검색 24건이며 별도 파일로 보관 중입니다.<br>
+  광고 노출은 시간·지역·입찰 상황에 따라 달라질 수 있으며, 심의 기준은 심의위원회 회의에 따라 바뀔 수 있습니다.
+</footer>
+
+</div>
+</body>
+</html>
