@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>인플루언서 반려 분석</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --text:#1b1f24; --sub:#5f6b7a; --line:#e3e7ec;
+    --accent:#1f6feb; --bad:#d1363f; --bad-bg:#fdecee; --good:#1a7f4b; --good-bg:#e8f6ee;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#111418; --card:#1a1e24; --text:#e8ebef; --sub:#9aa5b1; --line:#2b313a;
+      --accent:#5b9dff; --bad:#ff6b73; --bad-bg:#3a1d21; --good:#4cc38a; --good-bg:#16302a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#111418; --card:#1a1e24; --text:#e8ebef; --sub:#9aa5b1; --line:#2b313a;
+    --accent:#5b9dff; --bad:#ff6b73; --bad-bg:#3a1d21; --good:#4cc38a; --good-bg:#16302a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:"Noto Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    line-height:1.6;font-size:15px;word-break:keep-all}
+  .wrap{max-width:860px;margin:0 auto;padding:32px 16px 48px}
+  header{margin-bottom:24px}
+  .tag{display:inline-block;font-size:12px;color:var(--sub);border:1px solid var(--line);
+    border-radius:20px;padding:2px 10px;margin-bottom:10px}
+  h1{font-size:24px;margin:0 0 6px;letter-spacing:-.3px}
+  .meta{color:var(--sub);font-size:13px}
+  .summary{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:10px;padding:16px 18px;margin-bottom:28px}
+  .summary b{color:var(--accent)}
+  h2{font-size:17px;margin:0 0 12px}
+  section{margin-bottom:28px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);
+    border-radius:10px;overflow:hidden;font-size:14px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+  th{background:var(--bg);color:var(--sub);font-weight:500;font-size:13px}
+  tr:last-child td{border-bottom:none}
+  td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .low{color:var(--bad);font-weight:700}
+  .note{font-size:12px;color:var(--sub);margin-top:8px}
+  .grid{display:grid;gap:14px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .item-h{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line)}
+  .no{flex:none;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;
+    display:grid;place-items:center;font-weight:700;font-size:14px}
+  .item-h h3{margin:0;font-size:16px}
+  .cols{display:grid;grid-template-columns:1fr 1fr}
+  .col{padding:12px 16px}
+  .col + .col{border-left:1px solid var(--line)}
+  .lbl{display:inline-block;font-size:12px;font-weight:700;border-radius:4px;padding:1px 8px;margin-bottom:6px}
+  .lbl.bad{color:var(--bad);background:var(--bad-bg)}
+  .lbl.good{color:var(--good);background:var(--good-bg)}
+  ul{margin:0;padding-left:18px}
+  li{margin:2px 0}
+  .plan{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .step .when{font-size:12px;color:var(--accent);font-weight:700}
+  .step .what{font-size:14px;margin-top:4px}
+  footer{color:var(--sub);font-size:12px;border-top:1px solid var(--line);padding-top:12px}
+  @media (max-width:640px){
+    .cols,.plan{grid-template-columns:1fr}
+    .col + .col{border-left:none;border-top:1px solid var(--line)}
+    h1{font-size:21px}
+    table{font-size:13px} th,td{padding:8px}
+  }
+  @media print{ body{background:#fff} .wrap{padding:0} .item,.step,table,.summary{break-inside:avoid} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="tag">보고</span>
+  <h1>SC301 블로그 네이버 인플루언서 반려 원인 및 대책</h1>
+  <div class="meta">대상: blog.naver.com/sc301guide · 기준일 2026.11.11</div>
+</header>
+
+<div class="summary">
+  <b>핵심 요약</b> — 같은 분야(성형외과)에서 인플루언서로 선정된 계정은 모두 <b>원장 개인 명의</b>입니다.
+  SC301 블로그는 <b>병원 명의 계정</b>이고 실제 독자 반응도 낮아서 반려된 것으로 판단됩니다.
+  <b>원장 본인 명의로 바꿔 3개월간 정비한 뒤 재지원</b>하는 방안을 제안합니다.
+</div>
+
+<section>
+  <h2>현황 비교</h2>
+  <table>
+    <thead><tr><th>계정</th><th>운영 주체</th><th>이웃</th><th>누적 방문</th><th>오늘 방문</th></tr></thead>
+    <tbody>
+      <tr><td><b>SC301 (반려)</b></td><td>병원</td><td class="num">2,597</td><td class="num low">5.7만</td><td class="num low">22</td></tr>
+      <tr><td>의학살롱 (선정)</td><td>아베크성형외과 원장</td><td class="num">10,547</td><td class="num">967만</td><td class="num">979</td></tr>
+      <tr><td>에이치성형외과 (선정)</td><td>에이치성형외과 원장</td><td class="num">13,708</td><td class="num">441만</td><td class="num">192</td></tr>
+      <tr><td>아베크 공식블로그 (미선정)</td><td>병원</td><td class="num">2,522</td><td class="num">11.6만</td><td class="num">13</td></tr>
+    </tbody>
+  </table>
+  <div class="note">※ 같은 아베크성형외과라도 병원 공식 블로그는 미선정, 원장 개인 블로그만 선정됨 · 에필성형외과, 김형진 원장도 원장 개인 명의로 선정</div>
+</section>
+
+<section>
+  <h2>반려 원인 4가지와 대책</h2>
+  <div class="grid">
+
+    <div class="item">
+      <div class="item-h"><span class="no">1</span><h3>원장 개인이 아닌 '병원' 명의 계정</h3></div>
+      <div class="cols">
+        <div class="col"><span class="lbl bad">문제</span>
+          <ul>
+            <li>닉네임 'SC301의원', 직원이 쓰는 3인칭 글</li>
+            <li>원장은 '감수'로만 등장해 창작자가 불분명함</li>
+            <li>필명이 '성슐랭 가이드'에서 'SC301의원'으로 바뀌어 정체성이 일관되지 않음</li>
+          </ul></div>
+        <div class="col"><span class="lbl good">대책</span>
+          <ul>
+            <li><b>신동진 대표원장 본인 명의</b>로 '의학 전문가' 분야 지원(면허 인증)</li>
+            <li>프로필·닉네임을 원장 개인으로 변경</li>
+            <li>"제가 상담에서…"처럼 1인칭 글과 상담·수술 일기 추가</li>
+          </ul></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-h"><span class="no">2</span><h3>활동성·영향력 부족</h3></div>
+      <div class="cols">
+        <div class="col"><span class="lbl bad">문제</span>
+          <ul>
+            <li>이웃 2,597명인데 하루 방문 22명 → 서로이웃 위주로 보일 수 있음</li>
+            <li>글당 공감 약 6, 댓글 0.5</li>
+            <li>발행량 감소: 월 40개대(2025) → 15개 내외(2026.8~)</li>
+          </ul></div>
+        <div class="col"><span class="lbl good">대책</span>
+          <ul>
+            <li><b>주 4~5회</b> 꾸준히 발행(3개월 이상 유지)</li>
+            <li>댓글 답변, 질문형 글로 실제 독자 반응 늘리기</li>
+            <li>무의미한 서로이웃 추가 중단</li>
+          </ul></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-h"><span class="no">3</span><h3>주제가 흩어져 있음</h3></div>
+      <div class="cols">
+        <div class="col"><span class="lbl bad">문제</span>
+          <ul>
+            <li>콩팥병·당뇨발·발기부전·항문누공 등 성형과 무관한 논문 리뷰 약 37개</li>
+            <li>'전자상거래 표준약관', 공지 등 콘텐츠가 아닌 글</li>
+            <li>글 593개가 카테고리 1개에 몰려 있음</li>
+          </ul></div>
+        <div class="col"><span class="lbl good">대책</span>
+          <ul>
+            <li>주제를 <b>'지방이식·SVF 성형'</b> 하나로 집중</li>
+            <li>무관한 글은 비공개 또는 별도 카테고리로 분리</li>
+            <li>가슴 / 얼굴 / 회복 Q&amp;A / 연구 칼럼으로 카테고리 재편</li>
+          </ul></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-h"><span class="no">4</span><h3>광고·홍보성 문서</h3></div>
+      <div class="cols">
+        <div class="col"><span class="lbl bad">문제</span>
+          <ul>
+            <li>제목에 'SC301'이 들어간 글 126개, '잘하는곳·추천·후기' 제목 59개</li>
+            <li>내용과 무관한 태그 반복 삽입</li>
+            <li>"생착률 77.48%", "1회 시술로 만족" 등 효과를 보장하는 표현 → 의료법 제56조 위반 소지</li>
+          </ul></div>
+        <div class="col"><span class="lbl good">대책</span>
+          <ul>
+            <li>지역명·'잘하는곳' 제목을 정보형 제목으로 수정</li>
+            <li>태그는 글당 5~7개, 본문과 일치하게</li>
+            <li>효과·수치 표현은 출처와 조건을 밝혀 수정하고, 과거 글도 정비</li>
+          </ul></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>실행 일정</h2>
+  <div class="plan">
+    <div class="step"><div class="when">1개월차</div><div class="what">명의 전환(원장 프로필) · 기존 글 정비(제목·태그·무관 글)</div></div>
+    <div class="step"><div class="when">2~3개월차</div><div class="what">주 4~5회 원장 1인칭 콘텐츠 발행 · 댓글 소통</div></div>
+    <div class="step"><div class="when">4개월차</div><div class="what">방문·반응 지표 점검 후 '의학 전문가' 분야 재지원</div></div>
+  </div>
+</section>
+
+<footer>
+  ※ 네이버는 반려 사유를 공개하지 않으므로 위 내용은 선정 계정과의 비교로 추정한 것입니다. 반려 메일의 사유 문구를 함께 확인 바랍니다.
+  수치 출처: 네이버 블로그·인플루언서 검색 공개 데이터(2026.11.11 수집).
+</footer>
+
+</div>
+</body>
+</html>
