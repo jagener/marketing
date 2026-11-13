@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>일본·대만 타겟 지역 추천</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b1f24; --muted: #5d6673; --line: #e3e6ea;
+    --accent: #2f5bd3; --accent-soft: #e8eefc; --warn: #a15c00; --warn-soft: #fff4e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121417; --card: #1b1e23; --text: #e8eaed; --muted: #9aa3ae; --line: #2c3138;
+      --accent: #7c9bf0; --accent-soft: #232c45; --warn: #f0b45c; --warn-soft: #2f2616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121417; --card: #1b1e23; --text: #e8eaed; --muted: #9aa3ae; --line: #2c3138;
+    --accent: #7c9bf0; --accent-soft: #232c45; --warn: #f0b45c; --warn-soft: #2f2616;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Noto Sans KR", -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-size: 15px; line-height: 1.6; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 32px 16px 48px; }
+  header h1 { font-size: 24px; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--muted); font-size: 14px; }
+  .cond { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .chip { background: var(--accent-soft); color: var(--accent); font-weight: 500; font-size: 13px;
+    padding: 4px 10px; border-radius: 999px; }
+  h2 { font-size: 18px; margin: 32px 0 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .tile .num { font-size: 26px; font-weight: 700; color: var(--accent); line-height: 1.2; }
+  .tile .lbl { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; color: var(--muted); font-weight: 500; font-size: 12px;
+    border-bottom: 1px solid var(--line); padding: 6px 8px; }
+  td { padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .rank { font-weight: 700; width: 28px; }
+  .region { font-weight: 500; }
+  .en { display: block; font-size: 12px; color: var(--muted); font-weight: 400; }
+  .why { color: var(--muted); font-size: 13px; }
+  .budget { width: 150px; white-space: nowrap; }
+  .bar { height: 6px; background: var(--line); border-radius: 3px; margin-top: 6px; }
+  .bar > span { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+  .amt { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .pct { color: var(--muted); font-size: 12px; margin-left: 4px; }
+  .excluded td { color: var(--muted); }
+  ul.plan { margin: 0; padding-left: 20px; }
+  ul.plan li { margin: 6px 0; }
+  .note { background: var(--warn-soft); color: var(--warn); border-radius: 10px; padding: 12px 14px;
+    font-size: 13px; margin-top: 12px; }
+  footer { margin-top: 32px; font-size: 12px; color: var(--muted); }
+  footer a { color: var(--muted); }
+  @media (max-width: 600px) {
+    .tiles { grid-template-columns: 1fr; }
+    .why { display: none; }
+    .budget { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>일본·대만 광고 타겟 지역 추천</h1>
+  <p>SC301의원 해외 광고 세팅 · 2026.11.13</p>
+  <div class="cond">
+    <span class="chip">국가별 1일 50만원</span>
+    <span class="chip">3일 운영</span>
+    <span class="chip">국가별 총 150만원 · 합계 300만원</span>
+  </div>
+</header>
+
+<h2>핵심 요약</h2>
+<div class="tiles">
+  <div class="card tile"><div class="num">42.0%</div><div class="lbl">2025년 국내 성형외과 외국인 환자 중 일본인 비중 (1위)</div></div>
+  <div class="card tile"><div class="num">27.8% <span style="font-size:15px;color:var(--muted)">vs</span> 0.5%</div><div class="lbl">강남언니 방문 비중: 일본 vs 대만 (시밀러웹, 2026.8~10월)</div></div>
+  <div class="card tile"><div class="num">여성 94%</div><div class="lbl">일본인 환자 성별 · 20대가 47.4%로 최다 → 20~30대 여성 타겟</div></div>
+</div>
+
+<h2>🇯🇵 일본 추천 지역</h2>
+<div class="card">
+  <table>
+    <thead><tr><th>#</th><th>지역</th><th class="why">근거</th><th>1일 예산</th></tr></thead>
+    <tbody>
+      <tr><td class="rank">1</td>
+        <td class="region">도쿄 수도권<span class="en">Tokyo · Kanagawa · Saitama · Chiba</span></td>
+        <td class="why">인구 약 3,700만(최대). 인천–나리타 세계 4위 노선</td>
+        <td class="budget"><span class="amt">27.5만</span><span class="pct">55%</span><div class="bar"><span style="width:55%"></span></div></td></tr>
+      <tr><td class="rank">2</td>
+        <td class="region">간사이<span class="en">Osaka · Hyogo · Kyoto</span></td>
+        <td class="why">인구 약 2,000만. 인천–간사이 세계 5위 노선</td>
+        <td class="budget"><span class="amt">15만</span><span class="pct">30%</span><div class="bar"><span style="width:30%"></span></div></td></tr>
+      <tr><td class="rank">3</td>
+        <td class="region">후쿠오카<span class="en">Fukuoka</span></td>
+        <td class="why">인구 약 510만. 인천·부산 1시간대, 근거리 가산</td>
+        <td class="budget"><span class="amt">7.5만</span><span class="pct">15%</span><div class="bar"><span style="width:15%"></span></div></td></tr>
+      <tr class="excluded"><td class="rank">–</td>
+        <td class="region">아이치(나고야)·홋카이도<span class="en">Aichi · Hokkaido</span></td>
+        <td class="why">예산 규모상 이번 테스트에서 제외</td>
+        <td class="budget">제외</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>🇹🇼 대만 추천 지역</h2>
+<div class="card">
+  <table>
+    <thead><tr><th>#</th><th>지역</th><th class="why">근거</th><th>1일 예산</th></tr></thead>
+    <tbody>
+      <tr><td class="rank">1</td>
+        <td class="region">타이베이 + 신베이<span class="en">Taipei · New Taipei</span></td>
+        <td class="why">인구 약 655만, 소득 최고. 쑹산–김포 노선</td>
+        <td class="budget"><span class="amt">22.5만</span><span class="pct">45%</span><div class="bar"><span style="width:45%"></span></div></td></tr>
+      <tr><td class="rank">2</td>
+        <td class="region">타이중<span class="en">Taichung</span></td>
+        <td class="why">인구 약 285만. 타이중–인천 주 41편</td>
+        <td class="budget"><span class="amt">10만</span><span class="pct">20%</span><div class="bar"><span style="width:20%"></span></div></td></tr>
+      <tr><td class="rank">3</td>
+        <td class="region">가오슝<span class="en">Kaohsiung</span></td>
+        <td class="why">인구 약 272만. 남부 최대 도시</td>
+        <td class="budget"><span class="amt">9.5만</span><span class="pct">19%</span><div class="bar"><span style="width:19%"></span></div></td></tr>
+      <tr><td class="rank">4</td>
+        <td class="region">타오위안<span class="en">Taoyuan</span></td>
+        <td class="why">인구 약 235만. 국제공항 소재, 타이베이 생활권</td>
+        <td class="budget"><span class="amt">8만</span><span class="pct">16%</span><div class="bar"><span style="width:16%"></span></div></td></tr>
+    </tbody>
+  </table>
+  <div class="note">대만은 한국 성형 수요가 일본의 약 1/50 수준이라, 지역을 더 좁히면 노출이 부족할 수 있어 4개 지역 모두 포함을 권장합니다.</div>
+</div>
+
+<h2>운영 방안</h2>
+<div class="card">
+  <ul class="plan">
+    <li><b>광고세트는 국가당 1개</b>로 운영하고 추천 지역을 모두 넣습니다. 3일·소액 예산은 쪼갤수록 학습이 안 됩니다. 꼭 나눠야 한다면 최대 2개까지만 나눕니다(예: 도쿄 수도권 / 간사이+후쿠오카).</li>
+    <li><b>1일 차 종료 후 지역별 성과 점검</b>: CTR, 상담 CPA, 문의 수를 보고 성과가 낮은 지역은 2일 차부터 제외합니다.</li>
+    <li><b>타겟</b>: 20~30대 여성 중심.</li>
+  </ul>
+</div>
+
+<h2>근거 및 한계</h2>
+<div class="card">
+  <ul class="plan">
+    <li>시밀러웹은 국가 단위 데이터만 제공하므로, 일본·대만 내 지역별 수요는 <b>인구와 한국행 항공 노선을 기준으로 추정</b>했습니다.</li>
+    <li>예산 비중은 지역 인구 비례 기준이며, 일본은 근거리인 후쿠오카에 가산을 두었습니다.</li>
+    <li>기존 일본·대만 상담 고객의 거주지 데이터가 있으면 그 기준으로 다시 배분하는 것이 가장 정확합니다.</li>
+  </ul>
+</div>
+
+<footer>
+  출처: Similarweb(gangnamunni.com 국가별 방문, 2026.8~10) ·
+  <a href="https://magazine.hankyung.com/business/article/202608301297b">한경매거진</a> ·
+  <a href="https://afterdoc.ai/blog/%EC%99%B8%EA%B5%AD%EC%9D%B8%ED%99%98%EC%9E%90%EC%9C%A0%EC%B9%98-%EC%9D%BC%EB%B3%B8-%ED%99%98%EC%9E%90%EC%9D%98-%ED%8A%B9%EC%A7%95%EA%B3%BC-%EC%A0%84%EB%9E%B5-%ED%8F%AC%EC%9D%B8%ED%8A%B8-67219">애프터닥</a> ·
+  <a href="https://aviationweek.com/air-transport/airports-networks/asia-dominates-worlds-busiest-air-routes-2025">Aviation Week</a> ·
+  <a href="https://routes.skyfaring.net/route/rmq-icn/">Skyfaring</a> · 지역 인구는 공식 통계 기준 근사치
+</footer>
+
+</div>
+</body>
+</html>
